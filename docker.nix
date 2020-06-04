@@ -15,7 +15,7 @@ dockerTools.buildImage {
     ln -s /share/zoneinfo /usr/share/zoneinfo
   '';
 
-  contents = [ tzdata bash nixTest];
+  contents = [ tzdata bash nixTest debianImage];
   config = {
     #EntryPoint = [ "${datPxDeriv}/bin/main"];
     ExposedPorts = {
